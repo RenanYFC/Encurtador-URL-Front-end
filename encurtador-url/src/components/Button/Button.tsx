@@ -7,7 +7,7 @@ interface propsButton {
 }
 const Button = (props: propsButton) => {
     return (
-        <button className= {`text-white bg-[var(--primary)] rounded-lg py-4 font-bold cursor-pointer ${props.className}`} onClick={props.onClick}>
+        <button type="button" className= {`text-white bg-[var(--primary)] rounded-lg py-4 font-bold cursor-pointer ${props.className}`} onClick={props.onClick}>
             {props.children}
         </button>
     );
