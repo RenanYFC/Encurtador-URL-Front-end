@@ -1,0 +1,29 @@
+import styled from 'styled-components'
+import { ReactNode } from 'react'
+
+interface propsBlackGlassContainer {
+    children: ReactNode,
+    className: string,
+    shadow?: true
+}
+
+const BlackGlassContainer = (props:propsBlackGlassContainer) => {
+    return (
+        <StyledWrapper>
+            <div className={props.className+(props.shadow&&" shadow")}>
+                {props.children}
+            </div>
+        </StyledWrapper>
+    )
+}
+
+const StyledWrapper = styled.div`
+    div {
+        background: linear-gradient(135.22deg, rgba(31, 31, 31, 0.85) 11.61%, rgba(20, 15, 15, 0.85) 94.55%);
+    }
+    .shadow {
+        box-shadow: 0px 4px 200px 10px rgba(255, 80, 80, 0.34);
+    }
+`;
+
+export {BlackGlassContainer};
