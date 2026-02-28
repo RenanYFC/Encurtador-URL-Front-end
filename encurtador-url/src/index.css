@@ -31,3 +31,7 @@
   src: local('IstokWeb'), url('./fonts/IstockWeb/IstokWeb-Bold.ttf'), format('truetype') ;
   font-weight: bold;
 }
+
+* {
+  font-family: 'IstokWeb';
+}

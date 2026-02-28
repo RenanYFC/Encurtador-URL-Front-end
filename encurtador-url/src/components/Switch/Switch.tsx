@@ -8,7 +8,7 @@ interface propsSwitch {
 const Switch = (props:propsSwitch) => {
   return (
     <StyledWrapper className='flex gap-5'>
-      <input className="switch" type="checkbox" defaultChecked={false} onChange={()=>{props.onChange()}} />
+      <input className="switch" type="checkbox" defaultChecked={true} onChange={()=>{props.onChange()}} />
       <p>{props.children}</p>
     </StyledWrapper>
   );

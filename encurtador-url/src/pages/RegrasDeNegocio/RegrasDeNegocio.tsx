@@ -1,8 +1,8 @@
-import { BlackGlassContainer } from "../components/BlackGlassContainer/BlackGlassContainer"
+import { BlackGlassContainer } from "../../components/BlackGlassContainer/BlackGlassContainer"
 
 const RegrasDeNegocio = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center w-full my-5">
             <h1 className="text-[var(--primary)] text-4xl font-bold">Regras de Negócio</h1>
             <ul className="flex flex-col gap-5">
                 <li className="mt-8">
