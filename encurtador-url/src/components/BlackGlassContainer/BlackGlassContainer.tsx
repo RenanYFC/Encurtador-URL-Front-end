@@ -10,7 +10,7 @@ interface propsBlackGlassContainer {
 const BlackGlassContainer = (props:propsBlackGlassContainer) => {
     return (
         <StyledWrapper>
-            <div className={props.className+(props.shadow&&" shadow")}>
+            <div className={props.className+(props.shadow?" shadow":"")}>
                 {props.children}
             </div>
         </StyledWrapper>

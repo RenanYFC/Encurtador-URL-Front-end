@@ -8,8 +8,8 @@ const LayoutPadrao = () => {
             <h1 className='text-[var(--primary)] text-4xl font-bold'><NavLink to="/">Encurtador de Links</NavLink></h1>
             <ul className='flex gap-7 cursor-pointer'>
                 <NavLink to="/regras">Regras de Negócio</NavLink>
-                <li>Repositório</li>
-                <li>GitHub</li>
+                <li><a href="https://github.com/RenanYFC/Encurtador-URL-Front-end" target="_blank">Repositório Front-end</a></li>
+                <li><a href="https://github.com/RenanYFC/Encurtador-URL-Back-end" target="_blank">Repositório Back-end</a></li>
             </ul>
             </BlackGlassContainer>
             </nav>

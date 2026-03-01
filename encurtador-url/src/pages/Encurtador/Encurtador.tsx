@@ -34,7 +34,7 @@ const Encurtador = () => {
 const HandleSendButton = (setLink: React.Dispatch<React.SetStateAction<null>>) => {
   console.log("clicado");
   fetch("http://localhost:3000/urls", {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
       "Accept": "application/json",
